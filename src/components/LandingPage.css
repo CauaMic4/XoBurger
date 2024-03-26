@@ -1,0 +1,91 @@
+.banner {
+  background-image: url(/banner-1.jpg);
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  height: 500px;
+  flex-direction: column;
+  display: flex;
+}
+
+.banner h2 {
+  margin: 150px auto 0;
+  color: #fff;
+  text-align: center;
+}
+
+.banner span {
+  color: #f3f6c2;
+  display: block;
+  margin-top: 10px;
+}
+
+.banner .options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.banner .options p {
+  margin: 0 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.options p:hover {
+  color: red;
+  border-bottom: solid 1px #fff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-us {
+  background-image: url(/barrasuperior.jpg);
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  background-size: cover;
+  width: 100%;
+  padding: 25px;
+}
+
+.contact-us button {
+  margin: 0 auto;
+  display: flex;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px;
+}
+
+button:hover {
+  color: red;
+  border-bottom: solid 1px #fff;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.our-story {
+  background-image: url(/fundo.png);
+}
+
+.our-story h2 {
+  margin: 0 auto;
+  display: flex;
+  color: #454343;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.our-story p {
+  width: 600px;
+  text-align: start;
+  margin: 0 auto;
+  padding: 50px;
+  font-size: 20px;
+}
