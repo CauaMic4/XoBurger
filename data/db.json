@@ -1,0 +1,29 @@
+{
+    "products":[
+        {
+        "id": "1",
+        "name": "Big Smach",
+        "ingredients": "Hamburguer Hangus, Queijo, Maionese da casa, Cheddar, Pão Brioche",
+        "price": "59.90"
+        },
+        {
+        "id": "2",
+        "name": "Classic Smach",
+        "ingredients": "Hamburguer Hangus, Bacon, Maionese da casa, Cheddar, Pão na chapa",
+        "price": "45.90"
+        },
+        {
+        "id": "3",
+        "name": "Super Smach",
+        "ingredients": "Hamburguer Hangus, Bacon, Costela, Queijo, Maionese da casa, Cheddar, Pão Brioche",
+        "price": "70.00"
+        },
+        {
+        "id": "4",
+        "name": "Kids Smach",
+        "ingredients": "Hamburguer, Queijo, Maionese da casa, Pão Brioche",
+        "price": "25.90"
+        }
+    ]
+    
+}

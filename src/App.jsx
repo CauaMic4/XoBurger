@@ -1,5 +1,6 @@
 //React
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 //Components
 import HeaderBar from './components/HeaderBar'
@@ -9,8 +10,17 @@ function App() {
 
   return (
     <div>
-      <HeaderBar />
-      <LandingPage/>
+      <BrowserRouter>
+        <HeaderBar />
+        <LandingPage />
+        <Routes>
+          <Route>
+
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      
+      
     </div>
   )
 }
