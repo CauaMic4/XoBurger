@@ -24,7 +24,7 @@ export const useFetch = (url) => {
                 },
                 body: JSON.stringify(data),
             });
-            
+
             setMethod(method);
         } else if (method === "DELETE") {
             setConfig({
@@ -41,16 +41,48 @@ export const useFetch = (url) => {
 
     useEffect(() => {
         const fetchData = async () => {
+            // loading
             setLoading(true);
 
             try {
                 const res = await fetch(url);
                 const json = await res.json();
-            } catch (error) {
-                
-            }
-        }
-    })
 
-    console.log(config, data, setData, method, callFetch, setCallFetch, loading, error, setError, itemId, httpConfig)
+                setData(json);
+            } catch (error) {
+                console.log(error.message);
+                setError("Houve algum erro ao carregar os dados");
+            }
+
+            setLoading(false);
+        };
+        fetchData();
+    }, [url, callFetch]);
+
+    // Refactoring the POST
+
+    useEffect(() => {
+        const httpRequest = async () => {
+            let json;
+
+            if (method === "POST") {
+                let fetchOptions = [url, config];
+
+                const res = await fetch(...fetchOptions);
+                const json = await res.json();
+
+                setCallFetch(json);
+            } else if (method === "DELETE") {
+                const deleteUrl = `${url}/${itemId}`;
+
+                const res = await fetch(deleteUrl, config);
+
+                json = await res.json();
+            }
+            setCallFetch(json);
+        }
+        httpRequest();
+    }, [config, method, url]);
+
+    return { data, httpConfig, loading, error };
 }
