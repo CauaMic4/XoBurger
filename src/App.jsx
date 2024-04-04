@@ -12,6 +12,7 @@ import Products from './pages/Products'
 import Payment from './pages/Payment'
 import LandingPage from './pages/LandingPage'
 import Menu from './pages/Menu'
+import ContactUs from './pages/ContactUs'
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/products' element={<Products />} />
             <Route path='/payment' element={<Payment />} />
             <Route path='/menu' element={<Menu />} />
+            <Route path='/contact_us' element={<ContactUs/>}/>
             <Route path='*' element={<NotFound />} />
           </Route>
         </Routes>

@@ -13,7 +13,7 @@ const LandingPage = () => {
             </div>
 
             <div className='contact-us'>
-                <button>Fale conosco</button>
+                <Link to='/contact_us'><button>Fale conosco</button></Link>
             </div>
 
             <div className='our-story'>
