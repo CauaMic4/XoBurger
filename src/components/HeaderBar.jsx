@@ -4,10 +4,11 @@ import './HeaderBar.css';
 const HeaderBar = () => {
 
   return (
-    <div className='header-bar'>
+    <div className='container header-bar'>
       <h1>Xo Burger</h1>
-    
-      <nav className='buttons'>
+
+
+      <nav className='navbar navbar-expand-lg buttons'>
         <Link to="/products" className='button'><button>Pedidos</button></Link>
         <Link to="/payment"><button>Pagamentos</button></Link>
       </nav>

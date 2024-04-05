@@ -12,7 +12,7 @@ const LandingPage = () => {
                 </div>
             </div>
 
-            <div className='contact-us'>
+            <div className='contact-us container'>
                 <Link to='/contact_us'><button>Fale conosco</button></Link>
             </div>
 
